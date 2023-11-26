@@ -1,0 +1,5 @@
+CPP := g++ -std=c++17
+CPPFLAGS := -O1
+
+bank: Main.cpp Account.cpp Savings_Account.cpp Current_Account.cpp
+	$(CPP) $(CPPFLAGS) $^ -o $@
